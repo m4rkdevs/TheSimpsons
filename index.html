@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+    <script src="./js/script.js" defer></script>
+    <link href="http://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+   
+    
+    <title>The Simpson-Jogo</title>
+</head>
+
+<body>
+    
+
+    <div class="game-board">
+
+        <div class="score">
+            <span style="font-size: 16pt" id="count">0</span>
+        </div>
+        <img src="./imagem/skinner.png" class="sk">
+        <img src="./imagem/the.png" class="sim">
+        <img src="./imagem/nuvem1.png" class="cloud">
+        <img src="./imagem/bart.gif" class="bart">
+        
+         
+
+        <div width="100%" height="100%" class="game-over">
+            <h1>Game over</h1>
+            <h3>Você conseguiu <span id="countEnd">0</span> pontos!</h3>
+          
+            <button onclick="reloadPage()"><img src="./imagem/reload.png" width="50px" height="50px" alt=""></button><br>
+            <img src="./imagem/final1.jpeg" width="600px" height="50%">
+        </div>
+
+            
+        </div>
+    </div>
+
+</body>
+
+</html>

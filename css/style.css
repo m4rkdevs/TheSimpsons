@@ -1,0 +1,160 @@
+@font-face {
+    font-family:'Source Sans Pro', 'sans-serif'; 
+    src: url("../css/RockSalt-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+
+.game-board {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 0px;
+    position: absolute;
+    overflow: hidden;
+    border-bottom: 80px solid rgb(72, 74, 72);
+    background-image: linear-gradient( rgb(15, 91, 244) ,rgb(17, 191, 207),rgba(150, 86, 2, 0.823) );
+    
+       
+}
+
+.imagens {
+    width: 100%;
+    text-align: center;
+}
+
+#down {
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+.sk {
+    position: absolute;
+    width: 80px;
+    bottom: -4px;
+    rotate: 180deg;
+    animation: sk-animation 2s infinite linear;
+}
+
+.sim {
+    position: absolute;
+    width: 350px;
+    top: 10px;
+    margin-bottom: 20%;
+    animation: sim-animation 80s infinite linear;
+}
+
+.cloud {
+    position: absolute;
+    width: 750px;
+    top: 40px;
+    animation: cloud-animation 30s infinite linear;
+}
+
+.score {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 20px;
+    text-align: start;
+    color: rgb(255, 255, 255);
+       
+}
+
+.bart {
+    position: absolute;
+    width: 140px;
+    bottom: -10px;
+}
+
+.jump {
+    animation: jump-animation 500ms ease-out;
+}
+
+.game-over {
+    display: none;
+    color: rgb(255, 238, 0);
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.4rem;
+   
+}
+
+
+@keyframes jump-animation {
+    0% {
+        bottom: 0;
+    }
+    30% {
+        bottom: 190px;
+    }
+    50% {
+        bottom: 190px;
+    }
+    70%{
+        bottom: 190px;
+    }
+    90%{
+        bottom: 190px;
+    }
+      
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes sk-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes cloud-animation {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes sim-animation {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes dead-animation {
+    0% {
+        bottom: 60px;
+    }
+    10% {
+        transform: rotate(260deg);
+    }
+    30% {
+        transform: rotate(510deg);
+    }
+    50%{
+        transform: rotate(800deg);
+    }
+    
+    100% {
+        right: -500px;
+    }
+}
